@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ansh Raj | Author</title>
+  <meta name="description" content="Official author website of Ansh Raj, author of From Nothing to Something: A Boy Who Rose From Nothing and Achieved Everything.">
+  <style>
+    :root { --ink:#111827; --muted:#6b7280; --paper:#f8fafc; --accent:#244b3a; --gold:#c9a227; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family: Georgia, 'Times New Roman', serif; color:var(--ink); background:var(--paper); line-height:1.65; }
+    nav { display:flex; justify-content:space-between; align-items:center; padding:20px 7%; background:white; border-bottom:1px solid #e5e7eb; position:sticky; top:0; z-index:2; }
+    .brand { font-size:1.25rem; font-weight:700; letter-spacing:.08em; }
+    nav a { color:var(--ink); text-decoration:none; margin-left:24px; font-family:Arial,sans-serif; font-size:.9rem; }
+    .hero { min-height:72vh; display:grid; place-items:center; padding:70px 7%; background:linear-gradient(135deg,#eef5f1,#fff); }
+    .hero-inner { max-width:1050px; width:100%; display:grid; grid-template-columns:1.2fr .8fr; gap:60px; align-items:center; }
+    .eyebrow { color:var(--accent); text-transform:uppercase; letter-spacing:.18em; font:700 .75rem Arial,sans-serif; }
+    h1 { font-size:clamp(3rem,7vw,6rem); line-height:.95; margin:14px 0 22px; }
+    .tagline { font-size:1.25rem; color:#374151; max-width:650px; }
+    .button { display:inline-block; margin-top:22px; padding:13px 22px; background:var(--accent); color:white; text-decoration:none; border-radius:5px; font-family:Arial,sans-serif; }
+    .book-wrap { text-align:center; }
+    .book-wrap img { width:min(290px,80%); box-shadow:0 20px 45px rgba(0,0,0,.22); border-radius:4px; }
+    section { max-width:1050px; margin:auto; padding:80px 7%; }
+    h2 { font-size:2.4rem; margin-top:0; }
+    .about { display:grid; grid-template-columns:1fr 1fr; gap:60px; }
+    .book-card { background:white; padding:30px; border:1px solid #e5e7eb; border-radius:10px; display:grid; grid-template-columns:150px 1fr; gap:28px; align-items:center; }
+    .book-card img { width:150px; box-shadow:0 10px 25px rgba(0,0,0,.15); }
+    footer { background:#111827; color:#d1d5db; padding:45px 7%; text-align:center; font-family:Arial,sans-serif; }
+    footer a { color:white; }
+    .small { color:var(--muted); font-family:Arial,sans-serif; font-size:.9rem; }
+    @media (max-width:760px) {
+      nav { padding:16px 5%; } nav a { margin-left:10px; font-size:.78rem; }
+      .hero-inner,.about { grid-template-columns:1fr; }
+      .hero { padding:55px 6%; }
+      h1 { font-size:3.6rem; }
+      .book-card { grid-template-columns:1fr; text-align:center; }
+      .book-card img { margin:auto; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="brand">ANSH RAJ</div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#books">Books</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <header class="hero">
+      <div class="hero-inner">
+        <div>
+          <div class="eyebrow">Official Author Website</div>
+          <h1>Ansh Raj</h1>
+          <p class="tagline">Author of <em>From Nothing to Something: A Boy Who Rose From Nothing and Achieved Everything</em>.</p>
+          <a class="button" href="#books">Explore the Book</a>
+        </div>
+        <div class="book-wrap">
+          <img src="cover.jpg" alt="Cover of From Nothing to Something by Ansh Raj">
+        </div>
+      </div>
+    </header>
+
+    <section id="about">
+      <div class="about">
+        <div>
+          <h2>About the Author</h2>
+          <p>
+            Ansh Raj is a young author who believes that big dreams can begin with very small steps.
+            Through his writing, he explores ambition, perseverance, imagination and the journey from
+            an ordinary beginning toward extraordinary goals.
+          </p>
+        </div>
+        <div>
+          <h2>A Story of Possibility</h2>
+          <p>
+            <em>From Nothing to Something</em> is a story built around the idea that where you begin
+            does not have to determine where you finish. It is written for readers who enjoy stories
+            about dreams, determination and achievement.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="books">
+      <h2>Books</h2>
+      <div class="book-card">
+        <img src="cover.jpg" alt="From Nothing to Something book cover">
+        <div>
+          <h3>From Nothing to Something</h3>
+          <p><em>A Boy Who Rose From Nothing and Achieved Everything</em></p>
+          <p class="small">Paperback · Published May 22, 2026</p>
+          <a class="button" href="https://www.goodreads.com/book/show/252648328-from-nothing-to-something">View on Goodreads</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>For official author enquiries, please contact:</p>
+      <p><strong>anshlovesisro@gmail.com</strong></p>
+    </section>
+  </main>
+
+  <footer>
+    <div>© 2026 Ansh Raj · Official Author Website</div>
+  </footer>
+</body>
+</html>
